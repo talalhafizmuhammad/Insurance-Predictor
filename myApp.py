@@ -9,8 +9,8 @@ with open("scaler.pkl", "rb") as f:
 
 st.title("Insurance Charges Predictor")
 
-age = st.number_input("Enter Age", min_value = 0, max_value = 120, value = 30)
-bmi = st.number_input("Enter BMI", min_value = 10.0, max_value = 50.0, value = 25.0)
+age = st.number_input("Enter Age", min_value = 18, max_value = 120, value = 30)
+bmi = st.number_input("Enter BMI", min_value = 22.0, max_value = 55.0, value = 25.0)
 children = st.number_input("Enter the Number of Children", min_value = 0, max_value = 10, value = 0)
 
 smoker_choice = st.selectbox("Is the person Smoker?", options=['yes', 'no'], index = 1)
